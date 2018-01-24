@@ -5,8 +5,8 @@
 
 std::string center(const std::string &text, unsigned width = 80) {
 
-	// If the text is bigger than the specified width
-	// Don't do anything.
+	// If the string is longer than the specified width
+	// don't do anything.
 	if (text.size() >= width) { return text; }
 
 	unsigned padding_width = (width / 2) - (text.size() / 2);
@@ -14,4 +14,4 @@ std::string center(const std::string &text, unsigned width = 80) {
 	return std::string(padding_width, ' ') + text;
 }
 
-#endif // DENTER_H
+#endif // CENTER_H
