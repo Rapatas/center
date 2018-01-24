@@ -4,9 +4,12 @@
 #include <string>
 
 #ifdef __linux__
+
 #include <sys/ioctl.h>
 #include <unistd.h>
+
 #elif _WIN32
+
 #endif
 
 // This function will be called if the user does not provide a line width
@@ -15,7 +18,8 @@ unsigned get_terminal_width() {
 	struct winsize size;
 	ioctl(STDOUT_FILENO,TIOCGWINSZ,&size);
 	return size.ws_col;
-#elif _WIN32
+// #elif _WIN32
+#else
 	return 80;
 #endif
 }
