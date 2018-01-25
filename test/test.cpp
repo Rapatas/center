@@ -2,7 +2,7 @@
 
 #include <cassert>
 
-#include "center.h"
+#include "../include/center.h"
 
 using namespace std;
 
