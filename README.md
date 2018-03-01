@@ -2,10 +2,14 @@
 
 Center a string of text horizontally in your terminal.
 
-```cpp
-// It will figure out the width of your terminal and place the text in the middle.
-std::cout << center("Original text") << '\n';
+- Works on windows and linux.
+- Automatically calculates the width of your terminal
 
-// Optionaly, you can provide a forced width (80).
+```cpp
+std::cout << center("Original text") << '\n';
+```
+Or just pick the width yourself:
+```cpp
+// Forced width (80).
 std::cout << center("Original text", 80) << '\n';
 ```
