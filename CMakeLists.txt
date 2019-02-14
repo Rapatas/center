@@ -1,8 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
 
-# Required for YCM to work
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-
 project(
 	center
 	VERSION 0.0.0
@@ -11,7 +8,8 @@ project(
 
 add_library(
 	${PROJECT_NAME}
-	INTERFACE
+	SHARED
+	./src/center.cpp
 )
 
 set(
