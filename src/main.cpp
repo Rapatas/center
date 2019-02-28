@@ -9,4 +9,6 @@ int main() {
 	while (getline(std::cin, lineInput)) {
 		std::cout << center(lineInput);
 	}
+
+	std::cout << '\n';
 }
