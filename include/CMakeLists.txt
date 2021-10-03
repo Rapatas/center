@@ -1,0 +1,8 @@
+
+set(
+  CENTER_LIB_INCLUDE_DIR
+  ${CMAKE_CURRENT_SOURCE_DIR}
+  PARENT_SCOPE
+)
+
+add_subdirectory(center)

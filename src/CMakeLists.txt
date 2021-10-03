@@ -1,14 +1,14 @@
 
 set(
-  ${CENTER_LIB_NAME}-cpp
+  CENTER_LIB_SOURCES
   center.cpp
 )
 
 add_library(
   ${CENTER_LIB_NAME}
   SHARED
-  ${${CENTER_LIB_NAME}-cpp}
-  ${${CENTER_LIB_NAME}-hpp}
+  ${CENTER_LIB_SOURCES}
+  ${CENTER_LIB_HEADER}
 )
 
 set_target_properties(
@@ -20,5 +20,5 @@ set_target_properties(
 target_include_directories(
   ${CENTER_LIB_NAME}
   PUBLIC
-    ${CMAKE_SOURCE_DIR}/include
+    ${CENTER_LIB_INCLUDE_DIR}
 )

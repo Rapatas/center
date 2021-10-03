@@ -1,12 +1,12 @@
 
 set(
-  ${CENTER_BIN_NAME}-cpp
+  CENTER_BIN_SOURCES
   main.cpp
 )
 
 add_executable(
   ${CENTER_BIN_NAME}
-  ${${CENTER_BIN_NAME}-cpp}
+  ${CENTER_BIN_SOURCES}
 )
 
 set_target_properties(
