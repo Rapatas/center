@@ -1,2 +1,4 @@
 build*
 .*.sw?
+.cache/
+compile_commands.json

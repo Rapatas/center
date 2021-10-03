@@ -1,7 +1,6 @@
 #include <iostream>
-#include <string>
 
-#include "../include/center.h"
+#include <center/center.h>
 
 int main() {
 
