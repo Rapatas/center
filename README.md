@@ -1,15 +1,18 @@
 # Center
+
 Centers a string of text horizontally in your terminal.
 
-# Usage 
+## Usage
 
-## Executable
+### Executable
+
 ```bash
-cat myfyle | center
+cat file.txt | center
 ```
 
-## Library
-```cp
+### Library
+
+```cpp
 #include <center/center.h>
 
 // Calculate the width automaticly
@@ -19,11 +22,13 @@ std::cout << center("Original text") << '\n';
 std::cout << center("Original text", 80) << '\n';
 ```
 
-# Installation
+## Installation
+
 ```bash
 git clone https://github.com/Rapatas/center
 mkdir center/build
 cd center/build
 cmake ..
+make
 make install # As root
 ```
