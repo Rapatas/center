@@ -20,3 +20,8 @@ target_link_libraries(
   PRIVATE
     ${CENTER_LIB_NAME}
 )
+
+install(TARGETS
+  ${CENTER_BIN_NAME}
+  RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
