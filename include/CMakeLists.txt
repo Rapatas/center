@@ -6,3 +6,9 @@ set(
 )
 
 add_subdirectory(center)
+
+set(
+  CENTER_LIB_HEADERS
+  ${CENTER_LIB_HEADERS}
+  PARENT_SCOPE
+)

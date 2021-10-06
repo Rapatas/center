@@ -1,6 +1,6 @@
 
 set(
   CENTER_LIB_HEADERS
-  center.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/center.h
   PARENT_SCOPE
 )
