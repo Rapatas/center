@@ -15,8 +15,6 @@ unsigned get_terminal_width() {
 
 	struct winsize size;
 	ioctl(STDOUT_FILENO,TIOCGWINSZ,&size);
-
-  std::cout << size.ws_col << "\n";
 	return size.ws_col;
 
 #elif _WIN32
@@ -29,6 +27,7 @@ unsigned get_terminal_width() {
 	return csbi.srWindow.Right - csbi.srWindow.Left + 1;
 
 #else
+
 	// If there is no way to find the terminal width, set it to 80
 	return 80;
 
