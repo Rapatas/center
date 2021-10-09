@@ -4,6 +4,20 @@ set(
   center.cpp
 )
 
+if (WIN32)
+
+  set(RESOURCE_PRE_CONF "${CMAKE_CURRENT_SOURCE_DIR}/center.in.rc")
+  set(RESOURCE_POST_CONF "${CMAKE_BINARY_DIR}/center.rc")
+  list(APPEND CENTER_LIB_SOURCES ${RESOURCE_POST_CONF})
+
+  configure_file(
+    ${RESOURCE_PRE_CONF}
+    ${RESOURCE_POST_CONF}
+    @ONLY
+  )
+
+endif()
+
 add_library(
   ${CENTER_LIB_NAME}
   ${CENTER_LIB_SOURCES}

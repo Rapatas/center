@@ -4,6 +4,7 @@
 		alt="Center Logo"
 		src="./resources/images/center.svg">
 </p>
+
 # Center
 
 Centers strings of text horizontally in your terminal.
