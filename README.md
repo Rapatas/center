@@ -1,6 +1,12 @@
+<p align="center">
+    <img
+        width="20%"
+		alt="Center Logo"
+		src="./resources/images/center.svg">
+</p>
 # Center
 
-Centers a string of text horizontally in your terminal.
+Centers strings of text horizontally in your terminal.
 
 ## Usage
 
@@ -15,7 +21,7 @@ cat file.txt | center
 ```cpp
 #include <center/center.h>
 
-// Calculate the width automaticly
+// Calculate the width automatically.
 std::cout << center("Original text") << '\n';
 
 // Forced width (80).
@@ -25,10 +31,11 @@ std::cout << center("Original text", 80) << '\n';
 ## Installation
 
 ```bash
-git clone https://github.com/Rapatas/center
+git clone https://github.com/rapatas/center
 mkdir center/build
 cd center/build
 cmake ..
 make
-make install # As root
+make package
+sudo apt install center_*_*.deb
 ```
