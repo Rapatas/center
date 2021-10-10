@@ -3,11 +3,19 @@
         width="20%"
 		alt="Center Logo"
 		src="./resources/images/center.svg">
+        <br>
 </p>
-
-# Center
-
-Centers strings of text horizontally in your terminal.
+<h1 align="center">--==[ center ]==--</h1>
+<h3 align="center">
+    Centers strings of text horizontally in your terminal.
+</h3>
+<p align="center">
+	<strong>
+		<a href="#usage">Usage</a>
+		•
+		<a href="#installation">Installation</a>
+	</strong>
+</p>
 
 ## Usage
 
