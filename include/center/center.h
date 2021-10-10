@@ -3,11 +3,11 @@
 
 #include <string>
 
-unsigned get_terminal_width();
+size_t get_terminal_width();
 
 std::string center(
 	const std::string &text,
-	unsigned width = get_terminal_width()
+	size_t width = get_terminal_width()
 );
 
 #endif // CENTER_H

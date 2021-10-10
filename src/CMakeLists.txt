@@ -2,7 +2,10 @@
 set(
   CENTER_LIB_SOURCES
   center.cpp
+  center.linux.cpp
+  center.windows.cpp
 )
+
 
 if (WIN32)
 
